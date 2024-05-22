@@ -1,3 +1,8 @@
+use rand::{Rng, rngs::OsRng};
+use schnorrkel::Keypair;
+use schnorrkel::Signature;
+
 fn main() {
-    println!("Hello, world!");
+    let keypair_player_0: Keypair = Keypair::generate_with(OsRng);
+    let keypair_player_1: Keypair = Keypair::generate_with(OsRng);
 }
